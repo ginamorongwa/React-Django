@@ -18,5 +18,6 @@ from django.urls import path
 from .views import main
 
 urlpatterns = [
-    path('', main) # call the main function when we get a blank url
+    path('home', main), # call the main function when we get a blank url
+    path('', main)
 ]

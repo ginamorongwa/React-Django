@@ -7,4 +7,4 @@ take in a request
 return a response
 '''
 def main(request):
-    return HttpResponse("Hello")
+    return HttpResponse("<h1>Hello</h1>")
