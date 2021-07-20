@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.urls import path
 #from .views import main
-from .views import RoomView
+from .views import RoomView, CreateRoomView
 
 urlpatterns = [
-    path('room', RoomView.as_view())
+    path('room', RoomView.as_view()),
+    path('create-room', CreateRoomView.as_view())
     # path('home', main), # call the main function when we get a blank url
     # path('', main)
 
